@@ -174,7 +174,7 @@ export function PaymentForm() {
             receiptId={receiptId}
             customerEmail={formData.email}
             customerName={formData.name}
-            planName="Digital Product Pro"
+            planName="Netflix Subscription | 1 Month"
             subtotal={subtotal}
             tax={tax}
             total={total}
