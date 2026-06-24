@@ -1,0 +1,41 @@
+.checkout-page {
+  position: relative;
+  height: 100dvh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding: 18px;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(139, 92, 246, 0.14), transparent 32rem),
+    radial-gradient(circle at 85% 20%, rgba(34, 211, 238, 0.1), transparent 28rem),
+    linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
+}
+
+.gradient-floor {
+  position: absolute;
+  left: -10%;
+  right: -10%;
+  bottom: -24%;
+  height: 38%;
+  background:
+    linear-gradient(
+      120deg,
+      rgba(139, 92, 246, 0.95),
+      rgba(236, 72, 153, 0.72),
+      rgba(34, 211, 238, 0.9),
+      rgba(79, 70, 229, 0.98)
+    );
+  transform: skewY(-8deg);
+}
+
+.checkout-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(124, 58, 237, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(124, 58, 237, 0.07) 1px, transparent 1px);
+  background-size: 88px 88px;
+  mask-image: linear-gradient(to bottom, black, transparent 75%);
+  pointer-events: none;
+}
